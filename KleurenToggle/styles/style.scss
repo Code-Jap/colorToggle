@@ -1,0 +1,102 @@
+@import './variables';
+
+
+
+body {
+    background-color: lightgray;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    
+
+}
+.home-background {
+    background: lightgray;
+}
+
+.green-background {
+    background: green;
+}
+
+
+.yellow-background {
+    background: yellow;
+}
+
+
+.red-background {
+    background: red;
+}
+
+.purple-background {
+    background: purple;
+}
+
+.blue-background {
+    background: blue;
+}
+
+
+
+.menu {
+    
+    &:hover {
+        cursor:grab;
+    }
+}
+
+.colorMenu {
+
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  font-weight: 600;
+  visibility: hidden;
+}
+
+
+.home {
+
+    @include style;
+    background: lightgray;
+    transition-delay: 150ms
+}
+
+.green {
+
+    @include style;
+    background: green;
+    transition-delay: 300ms
+}
+
+.yellow {
+
+    @include style;
+    background: yellow;
+    transition-delay: 450ms
+}
+
+.red {
+    
+    @include style;
+    background: red;
+    transition-delay: 600ms
+}
+
+.purple {
+
+    @include style;
+    background: purple;
+    transition-delay: 750ms
+}
+
+
+.blue {
+
+    @include style;
+    background: blue;
+    transition-delay: 900ms
+}
